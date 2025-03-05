@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Το Βιογραφικό μου</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+    <title>My CV ~ Ioannis Kalaitzidis ~</title>
+    <link rel="shortcut icon" type="image" href="/Images/cv.png">
+    <link rel="stylesheet" href="/CSS/Graphics.css">
+    <script src="/JAVASCRIPT/Welcome_message.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Όνομα Επώνυμο</h1>
-        <p><strong>Email:</strong> email@example.com</p>
-        <p><strong>Τηλέφωνο:</strong> +30 69XXXXXXXX</p>
-        <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/username</a></p>
-        <h2>Σχετικά με εμένα</h2>
-        <p>Σύντομη περιγραφή για τις δεξιότητες και την εμπειρία σου.</p>
-        <h2>Εργασιακή Εμπειρία</h2>
-        <p><strong>Θέση</strong> - Εταιρεία (Έτος-Έτος)</p>
-        <p>Περιγραφή εργασίας και επιτευγμάτων.</p>
-        <h2>Εκπαίδευση</h2>
-        <p><strong>Πτυχίο</strong> - Πανεπιστήμιο (Έτος-Έτος)</p>
-        <h2>Δεξιότητες</h2>
-        <p>HTML, CSS, JavaScript, Python, Unity, κ.λπ.</p>
-    </div>
+    <main>
+        <button class="icon">
+            <img src="/Images/laptop4.png" alt="Laptop Icon">
+            <p><b>Personal Info</b></p>
+        </button>
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Personal Info</h1>
+                <table>
+                    <tr>
+                        <td><b>Name:</b></td>
+                        <td>Ioannis</td>
+                    </tr>
+                    <tr>
+                        <td><b>Surname:</b></td>
+                        <td>Kalaitzidis</td>
+                    </tr>
+                    <tr>
+                        <td><b>Date of Birth:</b></td>
+                        <td>16/01/2002</td>
+                    </tr>
+                    <tr>
+                        <td><b>Birth Place:</b></td>
+                        <td>Xanthi, Greece</td>
+                    </tr>
+                    <tr>
+                        <td><b>Gender:</b></td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td><b>Nationality:</b></td>
+                        <td>Greek</td>
+                    </tr>
+                    <tr>
+                        <td><b>Languages:</b></td>
+                        <td>Greek (Native), English (C2 Proficiency)</td>
+                    </tr>
+                    <tr>
+                        <td><b>Driver’s License:</b></td>
+                        <td>A1, B</td>
+                    </tr>
+                    <tr>
+                        <td><b>Completed Military Service:</b></td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+            </div>            
+        </div>        
+    </main>
+    <footer>
+        <h1>Developed by Ioannis Kalaitzidis</h1>
+        <p>&copy; All rights reserved</p>
+    </footer>
 </body>
 </html>
