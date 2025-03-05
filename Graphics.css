@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "ＭＳ Ｐゴシック";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Εξασφαλίζει ότι το footer θα βρίσκεται στο κάτω μέρος */
+    background-color: #008080;
+    border: 4px solid #000000;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 17px
+}
+
+footer {
+    background-color: #c0c0c0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: auto; /* Κρατάει το footer στο κάτω μέρος της σελίδας */
+    border-top: 2px solid black;   /* Γραμμή στην κορυφή */
+    border-bottom: 2px solid black; /* Γραμμή στο κάτω μέρος */
+}
+
+.icon {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: fit-content; /* Το πλάτος προσαρμόζεται στο περιεχόμενο */
+    background: transparent; /* Διαφανές background */
+    padding: 5px; /* Μικρό padding για να μη "κολλάει" το περίγραμμα στα στοιχεία */
+    cursor: pointer;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    display: block; /* Για να αποφεύγονται κενά */
+    margin: auto;
+}
+
+.icon p {
+    font-size: 15px;
+    margin: 5px 0 0 0; /* Μικρότερο κενό πάνω από το κείμενο */
+}
+
+.modal {
+    display: none; /* Αρχικά κρυφό */
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    background-color: rgba(192,192,192,255);
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: left;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
